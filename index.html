@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Sorry, Vutumoni</title>
+    <style>
+      /* Ensure page takes up full height */
+      html,
+      body {
+        height: 100%;
+
+        margin: 0;
+        font-family: "Cursive", sans-serif;
+      }
+
+      /* Fullscreen responsive background image */
+      body {
+        background-image: url("sry.jpg");
+        background-size: 60%; /* Cover ensures it covers the screen perfectly */
+        background-position: center;
+        background-repeat: no-repeat;
+
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        overflow: hidden; /* Avoid scrollbar */
+      }
+
+      .message {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.368
+        ); /* Dark transparent background for readability */
+        padding: 20px 30px;
+        border-radius: 15px;
+        text-align: center;
+        animation: fadeInBox 2s ease-in-out; /* Smooth fade-in for the whole box */
+      }
+
+      /* Animating text fade-in and float */
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        animation: fadeInText 3s ease-in-out; /* 3-second fade-in animation */
+      }
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        animation: fadeInText 3s ease-in-out; /* 3-second fade-in animation */
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        animation: floatText 4s ease-in-out infinite alternate; /* Floating animation */
+      }
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        animation: floatText 4s ease-in-out infinite alternate; /* Floating animation */
+      }
+
+      p {
+        font-size: 1.2rem;
+        animation: fadeInText 3s 1s ease-in-out; /* Delay of 1 second */
+      }
+
+      /* Button hover effect */
+      .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        background-color: #f47a60;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        animation: fadeInText 4s ease-in-out; /* Button appears smoothly */
+      }
+
+      .btn:hover {
+        background-color: #f26b50;
+      }
+
+      /* Keyframes for text animations */
+      @keyframes fadeInText {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes floatText {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-20px); /* Text floats up and down */
+        }
+      }
+
+      /* Keyframe for smooth box fade-in */
+      @keyframes fadeInBox {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">
+      <h1>I’m Sorry, Vutumoni</h1>
+      <h2>Please amay khoma kore de sonai</h2>
+      <h3>I love you, sonai</h3>
+
+      <h4>Please Forgive Me Pechi</h4>
+    </div>
+  </body>
+</html>
